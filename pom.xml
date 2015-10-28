@@ -17,6 +17,7 @@
 		<spring.security.version>3.2.3.RELEASE</spring.security.version>
 		<hibernate.version>4.2.11.Final</hibernate.version>
 		<servletapi.version>2.5</servletapi.version>
+		<jackson.version>1.9.10</jackson.version>		
 	</properties>
 
   <dependencies>
@@ -26,6 +27,40 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+		<!-- JSON -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>2.4.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.4.1.1</version>
+		</dependency>
+		<!-- Jackson JSON Mapper -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+	  		<groupId>org.codehaus.jackson</groupId>
+	 		 <artifactId>jackson-mapper-asl</artifactId>
+	 		 <version>${jackson.version}</version>
+	 		 <scope>compile</scope>
+		</dependency>
+		<dependency>
+	  		<groupId>org.codehaus.jackson</groupId>
+	 		 <artifactId>jackson-core-asl</artifactId>
+	 		 <version>${jackson.version}</version>
+	 		 <scope>compile</scope>
+		</dependency>  
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>  		    
     		<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
