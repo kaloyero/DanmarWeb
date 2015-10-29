@@ -5,8 +5,9 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.http.MediaType;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,9 +15,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.facturador.danmar.model.Kiosko;
+import com.facturador.danmar.service.UserService;
 
 @Controller
 public class VersionController {
+	
+	@Autowired
+	UserService userService;
 
 	@RequestMapping("/getVersion")
 	public ModelAndView getVersion(){
@@ -61,4 +66,17 @@ public class VersionController {
 
 	}
 
+	@RequestMapping(value = "/jojo", method = RequestMethod.GET)
+	public @ResponseBody
+	Kiosko getShopInJSON() {
+
+		Kiosko shop = new Kiosko();
+		shop.setCode(123);
+		shop.setNombre("123");
+		shop.setDescription("asdas");
+
+		return shop;
+
+	}
+	
 }
