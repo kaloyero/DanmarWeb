@@ -17,8 +17,8 @@ import com.facturador.danmar.manager.ArticuloManager;
 @Controller
 public class ArticuloController {
 
-	@Autowired
-	ArticuloManager articuloManager;
+//	@Autowired
+//	ArticuloManager articuloManager;
 	
 //	@RequestMapping(value = "/articulo/findAll", method = RequestMethod.GET)
 //	public @ResponseBody	List<ArticuloForm> findAllArticulos() {
