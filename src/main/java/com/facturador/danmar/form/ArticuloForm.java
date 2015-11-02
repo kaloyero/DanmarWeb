@@ -170,12 +170,6 @@ public class ArticuloForm {
 	public void setDescuentos(String descuentos) {
 		this.descuentos = descuentos;
 	}
-	public String getGanancia() {
-		return ganancia;
-	}
-	public void setGanancia(String ganancia) {
-		this.ganancia = ganancia;
-	}
 	public String getGananciaMy() {
 		return gananciaMy;
 	}
@@ -277,6 +271,12 @@ public class ArticuloForm {
 	}
 	public void setVisible(String visible) {
 		this.visible = visible;
+	}
+	public void setGanancia(String ganancia) {
+		this.ganancia = ganancia;
+	}
+	public String getGanancia() {
+		return ganancia;
 	}
 
 

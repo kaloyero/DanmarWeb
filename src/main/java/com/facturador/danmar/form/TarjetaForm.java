@@ -2,25 +2,27 @@ package com.facturador.danmar.form;
 
 public class TarjetaForm {
 
-	private int codigo;
+	private String codigo;
 	
-	private int cuotas;
+	private String cuotas;
 	
 	private String coeficiente;
 
-	public int getCodigo() {
+
+
+	public String getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
-	public int getCuotas() {
+	public String getCuotas() {
 		return cuotas;
 	}
 
-	public void setCuotas(int cuotas) {
+	public void setCuotas(String cuotas) {
 		this.cuotas = cuotas;
 	}
 
